@@ -1,16 +1,37 @@
 {
   "name": "automated-ci-pipeline-jenkins",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "directories": {
     "doc": "docs",
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "test": "jest --ci --reporters=default --reporters=jest-junit"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sivapidathala/jenkins.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sivapidathala/jenkins/issues"
+  },
+  "homepage": "https://github.com/sivapidathala/jenkins#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0",
+    "jest-junit": "^16.0.0",
+    "supertest": "^7.1.4"
+  },
+  "jest-junit": {
+    "outputDirectory": "./reports/junit",
+    "outputName": "junit.xml"
+  }
 }
+
