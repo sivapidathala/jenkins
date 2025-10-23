@@ -222,7 +222,7 @@ Improved team productivity by automating code testing and packaging.
 Gained hands-on experience with Jenkins pipeline scripting and CI automation.
 
 **Author:**  
-**Manikanta Madisetty**
+**PIDATHALA SIVA**
 DevOps & Associate Engineer
 
 ✅ Project Status: Completed Successfully
